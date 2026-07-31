@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <h1>SUPER CAR's Gallery</h1>
+    <p>Beast's Of Beast</p>
+  </header>
+
+  <!-- Category filter buttons -->
+  <div class="filters">
+    <button class="filter-btn active" data-filter="ALL">All</button>
+    <button class="filter-btn active" data-filter="BENZ">BENZ</button>
+    <button class="filter-btn" data-filter="FERRARI">Ferrari</button>
+    <button class="filter-btn" data-filter="BMW">BMW</button>
+    <button class="filter-btn" data-filter="ROLLS ROYCE">Rolls Royce</button>
+  </div>
+
+    <!-- Gallery -->
+    <main class="gallery">
+
+  
+    <div class="gallery-item" data-category="BENZ">
+      <img src="https://images.pexels.com/photos/32757558/pexels-photo-32757558.jpeg" alt="Benz" loading="lazy">
+      <div class="overlay"><span>Benz</span></div>
+    </div>
+
+    <div class="gallery-item" data-category="FERRARI">
+      <img src="https://images.pexels.com/photos/17377912/pexels-photo-17377912.jpeg" alt="Ferrari" loading="lazy">
+      <div class="overlay"><span>Ferrari</span></div>
+    </div>
+
+    <div class="gallery-item" data-category="BMW">
+      <img src="https://images.pexels.com/photos/6040846/pexels-photo-6040846.jpeg" alt="Bmw" loading="lazy">
+      <div class="overlay"><span>Bmw</span></div>
+    </div>
+
+    <div class="gallery-item" data-category="BMW">
+      <img src="https://images.pexels.com/photos/35282031/pexels-photo-35282031.jpeg" alt="Bmw" loading="lazy">
+      <div class="overlay"><span>Bmw</span></div>
+    </div>
+
+    <div class="gallery-item" data-category="BMW">
+      <img src="https://images.pexels.com/photos/9708416/pexels-photo-9708416.jpeg" alt="Bmw" loading="lazy">
+      <div class="overlay"><span>Bmw</span></div>
+    </div>
+
+    <div class="gallery-item" data-category="FERRARI">
+      <img src="https://images.pexels.com/photos/28652542/pexels-photo-28652542.jpeg" alt="Ferrari" loading="lazy">
+      <div class="overlay"><span>Ferrari</span></div>
+    </div>
+
+    <div class="gallery-item" data-category="BENZ">
+      <img src="https://images.pexels.com/photos/18435520/pexels-photo-18435520.jpeg" alt="Benz" loading="lazy">
+      <div class="overlay"><span>Benz</span></div>
+    </div>
+
+    <div class="gallery-item" data-category="ROLLS ROYCE">
+      <img src="https://images.pexels.com/photos/3894079/pexels-photo-3894079.jpeg" alt="RollsRoyce" loading="lazy">
+      <div class="overlay"><span>Rolls Royce</span></div>
+    </div>
+
+    <div class="gallery-item" data-category="ROLLS ROYCE">
+      <img src="https://images.pexels.com/photos/30196262/pexels-photo-30196262.jpeg" alt="RollsRoyce" loading="eager">
+      <div class="overlay"><span>Rolls Royce</span></div>
+    </div>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close-btn" id="closeBtn">&times;</span>
+    <button class="nav-btn prev-btn" id="prevBtn">&#10094;</button>
+
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightboxImg">
+      <p class="caption" id="caption"></p>
+    </div>
+
+    <button class="nav-btn next-btn" id="nextBtn">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
